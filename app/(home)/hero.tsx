@@ -34,7 +34,13 @@ const Hero = () => {
           </p>
         </motion.div>
         <Link href="/dapp">
-          <div className="flex items-center gap-8 cursor-pointer w-fit mx-auto mt-4">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.5 }}
+            viewport={{ once: true }}
+            className="flex items-center gap-8 cursor-pointer w-fit mx-auto mt-4"
+          >
             <div className="relative w-[172px] h-[44px] flex items-center justify-center">
               <Image
                 src={btnimg}
@@ -47,7 +53,7 @@ const Hero = () => {
                 </h5>
               </div>
             </div>
-          </div>
+          </motion.div>
         </Link>
       </div>
     </div>
