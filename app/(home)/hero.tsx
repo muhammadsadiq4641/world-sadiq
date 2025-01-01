@@ -1,5 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import btnimg from "@assets/images/btnimg.png";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -30,6 +33,22 @@ const Hero = () => {
             RWAI tokens for real-world insights.
           </p>
         </motion.div>
+        <Link href="/dapp">
+          <div className="flex items-center gap-8 cursor-pointer w-fit mx-auto mt-4">
+            <div className="relative w-[172px] h-[44px] flex items-center justify-center">
+              <Image
+                src={btnimg}
+                alt="btnimg"
+                className="absolute w-full h-full inset-0"
+              />
+              <div className="relative flex items-center justify-center gap-[10px]">
+                <h5 className="text-white font-clashDisplay text-sm font-normal">
+                  Dapp
+                </h5>
+              </div>
+            </div>
+          </div>
+        </Link>
       </div>
     </div>
   );
