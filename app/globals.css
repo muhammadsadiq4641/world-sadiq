@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url(../public/assets/images/bodybg.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+@font-face {
+  font-family: Outspace Fighter;
+  src: url(../public/fonts/Outspace\ Fighter.otf);
+}
+
+@font-face {
+  font-family: Clash Display;
+  src: url(../public/fonts/ClashDisplay-Regular.otf);
+}
+
+.hero-title {
+  background: var(
+    --Linear,
+    linear-gradient(90deg, #00ffe3 51.09%, #009dff 85.48%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-gradient {
+  border: 1px solid var(--Linear, #00ffe3);
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #00ffe3, #009dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.claim-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.claim-scrollbar::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Track color */
+  border-radius: 8px; /* Rounded track */
+}
+
+.claim-scrollbar::-webkit-scrollbar-thumb {
+  background: #007bff; /* Thumb color */
+  border-radius: 8px; /* Rounded thumb */
+  border: 3px solid #f0f0f02c; /* Add padding around thumb */
+}
+
+.claim-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Change thumb color on hover */
+}
